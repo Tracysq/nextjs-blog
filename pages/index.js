@@ -6,10 +6,6 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>我的博客</title>
-      </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           第一篇文章

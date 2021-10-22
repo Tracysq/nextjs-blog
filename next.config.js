@@ -1,24 +1,9 @@
-module.exports = {
-  // reactStrictMode: true,
+const withImages = require('next-images')
+module.exports = withImages({
   images: {
     disableStaticImages: true
   },
-  webpack: (config, options) => {
-    const isServer = options.isServer
-    config.module.rules.push({
-      test: /\.(png|jpg|gif|jpeg|svg)$/,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[contenthash].[ext]',
-            outputPath: 'static',
-            publicPath: '/_next/static'
-          }
-        }
-      ],
-    })
-
+  webpack(config, options) {
     return config
-  },
-}
+  }
+})

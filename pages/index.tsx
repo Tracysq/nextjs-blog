@@ -1,6 +1,5 @@
 import png from 'assets/images/1.png'
-import Img from 'next/image'
-console.log(png)
+
 export default function Index() {
   return (
     <div>

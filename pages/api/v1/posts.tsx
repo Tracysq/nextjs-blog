@@ -1,6 +1,6 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiHandler } from "next"
 
-const Posts = (req: NextApiRequest, res: NextApiResponse) => {
+const Posts: NextApiHandler = (req, res) => {
   res.statusCode = 200
   res.setHeader('Content-Type', 'application/json')
   res.write(JSON.stringify({ name: 'qdd' }))

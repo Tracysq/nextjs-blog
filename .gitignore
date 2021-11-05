@@ -4,6 +4,8 @@
 /.idea/
 /.vscode/
 
+/blog-data/
+
 # dependencies
 /node_modules
 /.pnp
